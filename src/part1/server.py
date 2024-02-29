@@ -4,7 +4,6 @@ import json
 import logging
 
 # Initialize logging
-# logging.basicConfig(level=logging.INFO, format=' %(levelname)s - %(message)s')
 logging.basicConfig(level=logging.INFO)
 
 # Toy Store Catalog
@@ -54,7 +53,7 @@ class ThreadPool:
             
             if 'Query' in request:
                 toyName = request['Query']
-                toyInfo = self.getToyInfo(toyName)
+                toyInfo = self.Query(toyName)
                 client.sendall(json.dumps(toyInfo).encode('utf-8'))
             else:
                 logging.error(f"Invalid method name given")
@@ -64,7 +63,7 @@ class ThreadPool:
         finally:
             client.close()
 
-    def getToyInfo(self, toyName):
+    def Query(self, toyName):
         toy = catalog.get(toyName)
         if toy:
             return {'price': toy['price']} if toy['stock'] > 0 else {toyName: "Out of Stock"}
