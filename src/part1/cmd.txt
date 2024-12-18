@@ -1,0 +1,5 @@
+python3 client.py 128.119.243.168 8888 Tux,Whale & python3 client.py 128.119.243.168 8888 Whale,Tux,Tux,Tux,Whale,Tux,Whale,Whale,Tux,Tux & python3 client.py 128.119.243.168 8888 Whale,Tux,Tux,Whale,Whale & python3 client.py 128.119.243.168 8888 Whale,Whale,Whale & python3 client.py 128.119.243.168 8888 Tux,Whale,Tux,Tux,Tux,Whale,Whale,Tux,Tux,Whale,Whale,Whale,Whale & python3 client.py 128.119.243.168 8888 Tux,Dog & python3 client.py 128.119.243.168 8888 Tux,Whale,Whale,Whale,Whale & python3 client.py 128.119.243.168 8888 Tux,Tux 
+
+
+
+python3 client.py 128.119.243.255 8888 Tux
